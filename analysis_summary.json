@@ -1,0 +1,240 @@
+{
+  "raw_shape": [
+    426880,
+    18
+  ],
+  "clean_shape": [
+    333327,
+    20
+  ],
+  "clean_percent": 78.1,
+  "missing_pct": {
+    "size": 71.8,
+    "cylinders": 41.6,
+    "condition": 40.8,
+    "VIN": 37.7,
+    "drive": 30.6,
+    "paint_color": 30.5,
+    "type": 21.8,
+    "manufacturer": 4.1,
+    "title_status": 1.9,
+    "model": 1.2,
+    "odometer": 1.0,
+    "fuel": 0.7,
+    "transmission": 0.6,
+    "year": 0.3,
+    "id": 0.0,
+    "region": 0.0,
+    "price": 0.0,
+    "state": 0.0
+  },
+  "price_summary_raw": {
+    "count": 426880.0,
+    "mean": 75199.03,
+    "std": 12182282.17,
+    "min": 0.0,
+    "25%": 5900.0,
+    "50%": 13950.0,
+    "75%": 26485.75,
+    "max": 3736928711.0
+  },
+  "price_summary_clean": {
+    "count": 333327.0,
+    "mean": 19320.36,
+    "std": 13574.95,
+    "min": 1000.0,
+    "25%": 7995.0,
+    "50%": 16067.0,
+    "75%": 27990.0,
+    "max": 75000.0
+  },
+  "model_summary": [
+    {
+      "model": "Ridge regression",
+      "param": "alpha=10.0",
+      "log_rmse": 0.402,
+      "dollar_mae": 4839.6419
+    },
+    {
+      "model": "Ridge regression",
+      "param": "alpha=1.0",
+      "log_rmse": 0.402,
+      "dollar_mae": 4840.0006
+    },
+    {
+      "model": "Ridge regression",
+      "param": "alpha=0.1",
+      "log_rmse": 0.402,
+      "dollar_mae": 4840.0369
+    },
+    {
+      "model": "Linear regression",
+      "param": "",
+      "log_rmse": 0.402,
+      "dollar_mae": 4840.041
+    },
+    {
+      "model": "Ridge regression",
+      "param": "alpha=100.0",
+      "log_rmse": 0.4021,
+      "dollar_mae": 4837.8063
+    },
+    {
+      "model": "Lasso regression",
+      "param": "alpha=0.0005",
+      "log_rmse": 0.403,
+      "dollar_mae": 4839.7784
+    },
+    {
+      "model": "Lasso regression",
+      "param": "alpha=0.001",
+      "log_rmse": 0.4033,
+      "dollar_mae": 4834.0788
+    },
+    {
+      "model": "Lasso regression",
+      "param": "alpha=0.0025",
+      "log_rmse": 0.404,
+      "dollar_mae": 4815.3214
+    },
+    {
+      "model": "Lasso regression",
+      "param": "alpha=0.005",
+      "log_rmse": 0.4057,
+      "dollar_mae": 4799.7074
+    },
+    {
+      "model": "Median baseline",
+      "param": "",
+      "log_rmse": 0.8339,
+      "dollar_mae": 10841.8669
+    }
+  ],
+  "best_model": {
+    "model": "Ridge regression",
+    "param": "alpha=10.0",
+    "log_rmse": 0.40200082340347537,
+    "dollar_mae": 4839.641944975182
+  },
+  "top_effects": [
+    {
+      "feature": "car_age",
+      "log_price_effect": -0.3715,
+      "approx_percent_effect": -31.0294
+    },
+    {
+      "feature": "odometer",
+      "log_price_effect": -0.2744,
+      "approx_percent_effect": -23.9976
+    },
+    {
+      "feature": "cylinders_4 cylinders",
+      "log_price_effect": -0.251,
+      "approx_percent_effect": -22.1975
+    },
+    {
+      "feature": "fuel_gas",
+      "log_price_effect": -0.2359,
+      "approx_percent_effect": -21.0109
+    },
+    {
+      "feature": "cylinders_unknown",
+      "log_price_effect": -0.2178,
+      "approx_percent_effect": -19.5702
+    },
+    {
+      "feature": "cylinders_6 cylinders",
+      "log_price_effect": -0.1876,
+      "approx_percent_effect": -17.1021
+    },
+    {
+      "feature": "fuel_other",
+      "log_price_effect": -0.1425,
+      "approx_percent_effect": -13.2835
+    },
+    {
+      "feature": "drive_fwd",
+      "log_price_effect": -0.1372,
+      "approx_percent_effect": -12.8236
+    },
+    {
+      "feature": "drive_unknown",
+      "log_price_effect": -0.0914,
+      "approx_percent_effect": -8.7367
+    },
+    {
+      "feature": "cylinders_8 cylinders",
+      "log_price_effect": -0.086,
+      "approx_percent_effect": -8.2385
+    },
+    {
+      "feature": "fuel_hybrid",
+      "log_price_effect": -0.0759,
+      "approx_percent_effect": -7.3071
+    },
+    {
+      "feature": "condition_fair",
+      "log_price_effect": -0.0695,
+      "approx_percent_effect": -6.713
+    },
+    {
+      "feature": "manufacturer_group_nissan",
+      "log_price_effect": -0.0557,
+      "approx_percent_effect": -5.4206
+    },
+    {
+      "feature": "type_sedan",
+      "log_price_effect": -0.0545,
+      "approx_percent_effect": -5.3035
+    },
+    {
+      "feature": "size_unknown",
+      "log_price_effect": 0.0505,
+      "approx_percent_effect": 5.1789
+    },
+    {
+      "feature": "manufacturer_group_hyundai",
+      "log_price_effect": -0.0458,
+      "approx_percent_effect": -4.4727
+    },
+    {
+      "feature": "type_pickup",
+      "log_price_effect": 0.0414,
+      "approx_percent_effect": 4.2229
+    },
+    {
+      "feature": "manufacturer_group_other",
+      "log_price_effect": -0.0409,
+      "approx_percent_effect": -4.0077
+    },
+    {
+      "feature": "condition_good",
+      "log_price_effect": -0.0401,
+      "approx_percent_effect": -3.9286
+    },
+    {
+      "feature": "type_truck",
+      "log_price_effect": 0.04,
+      "approx_percent_effect": 4.0802
+    }
+  ],
+  "price_by_type": {
+    "pickup": 28990,
+    "other": 28590,
+    "truck": 26995,
+    "coupe": 21990,
+    "van": 16950,
+    "convertible": 16500,
+    "suv": 15495,
+    "hatchback": 14999
+  },
+  "price_by_condition": {
+    "good": 21990,
+    "unknown": 16900,
+    "new": 16000,
+    "like new": 14995,
+    "excellent": 11995,
+    "salvage": 3000,
+    "fair": 2900
+  }
+}
